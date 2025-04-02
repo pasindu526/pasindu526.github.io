@@ -1,6 +1,8 @@
 import P1 from '../assets/Projects/P1.png';
 import P2 from '../assets/Projects/P2.png';
 import P3 from '../assets/Projects/P3.png';
+import P4 from '../assets/Projects/P4.png';
+import P5 from '../assets/Projects/P5.png';
 
 export const projects = [
   {
@@ -15,7 +17,7 @@ export const projects = [
   {
     title: 'AnRich Clothing',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea accusantium impedit facere. Sequi, deserunt recusandae.',
+      'This is an e-commerce site offering trendy fashion with a simple design, built using WordPress based customer requirements.',
     techStack: ['Wordpress', 'WooCommerce'],
     link: 'http://www.anrichclothing.wuaze.com',
     github: '',
@@ -29,5 +31,23 @@ export const projects = [
     link: '',
     github: 'https://github.com/pasindu526/openconnect-frontend.git',
     image: P3,
+  },
+  {
+    title: 'Redesign: BOC B-App(UI/UX)',
+    description:
+      'This was our university TMA project. I gathered user feedback and focused on designing UI for the app to enhance the overall user experience.',
+    techStack: ['Figma', 'Photoshop'],
+    link: 'https://www.figma.com/design/mQQzN3qDg7Sp2MaSCdmuSc/Redesign---BOC-B-App?node-id=205-430&t=lhIZ6zuLztHYuEHA-1',
+    github: '',
+    image: P4,
+  },
+  {
+    title: 'H2Open App(UI/UX Design) ',
+    description:
+      'This was our university group mini-project addressing a research based problem.  I primarily focused on designing UIs for this app.',
+    techStack: ['Figma', 'Adobe Illustrator', 'Photoshop'],
+    link: 'https://www.figma.com/design/3vHldmCryOAPmwGaKog2ek/H2Open---Find-Cleam-Water-Near-You?node-id=385-772&t=cPkCeTgMsjSqArnb-1',
+    github: '',
+    image: P5,
   },
 ];
