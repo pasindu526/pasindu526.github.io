@@ -1,0 +1,15 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   overflow-x: hidden;
+}
+
+#home{
+   background-image: url('../assets/bg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}

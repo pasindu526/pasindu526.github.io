@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .resumeLi {
+        @apply w-full p-4 text-base font-semibold bg-gray-900 text-gray-400 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center rounded-none;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
