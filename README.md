@@ -1,4 +1,4 @@
-# Portfolio Website
+# My Portfolio Website
 
 A personal portfolio website showcasing my projects, skills, achievements, and experiences. Designed with a modern and clean aesthetic, it highlights creativity and technical expertise while providing a user-friendly experience.
 
@@ -18,5 +18,9 @@ A personal portfolio website showcasing my projects, skills, achievements, and e
 
 - **HTML** and **CSS**
 - **JavaScript**
-- **React.js** (or replace with your chosen framework/library)
-- **Tailwind CSS** (optional for styling)
+- **React.js + Vite** 
+- **Tailwind CSS**
+
+## 📸 Screenshot
+
+![P1](https://github.com/user-attachments/assets/0b9ad651-0d5a-44cf-a862-991678242c83)
