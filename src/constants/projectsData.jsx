@@ -10,8 +10,8 @@ export const projects = [
     description:
       'A personal portfolio website showcasing my projects, skills, achievements, and experiences. Designed with a modern and user friendly layout.',
     techStack: ['React.JS', 'Vite', 'Tailwind CSS', 'EmailJS'],
-    link: 'https://business420.netlify.app/',
-    github: 'https://github.com/rohitsingh93300/YTBusiness',
+    link: 'https://pasindubandara.netlify.app/',
+    github: 'https://github.com/pasindu526/My-Portfolio.git',
     image: P1,
   },
   {
