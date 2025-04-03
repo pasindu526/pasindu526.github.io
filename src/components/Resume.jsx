@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Education from './Education';
 import Skills from './Skills';
 import Achievement from './Achievement';
-import Achievement2 from './Achievement2';
 
 const Resume = () => {
   const [educationData, setEducationData] = useState(false);
@@ -63,7 +62,6 @@ const Resume = () => {
       {educationData && <Education />}
       {skillData && <Skills />}
       {achievementData && <Achievement />}
-      {/* {achievementData && <Achievement2 />} */}
     </section>
   );
 };

@@ -18,9 +18,9 @@ A personal portfolio website showcasing my projects, skills, achievements, and e
 
 - **HTML** and **CSS**
 - **JavaScript**
-- **React.js + Vite** 
+- **React.js + Vite**
 - **Tailwind CSS**
 
 ## 📸 Screenshot
 
-![P1](https://github.com/user-attachments/assets/0b9ad651-0d5a-44cf-a862-991678242c83)
+![alt text](image.png)

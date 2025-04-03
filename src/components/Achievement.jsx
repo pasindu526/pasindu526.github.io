@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { archievements } from '../constants/archivementsData';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Achievement = () => {
   const [selectedArchievement, setSelectedArchievement] = useState(null);
@@ -42,12 +43,12 @@ const Achievement = () => {
               <div
                 key={id}
                 className="flex-shrink-0 w-72 sm:w-80 lg:w-[23vw] bg-gray-900 rounded-lg p-3 shadow-lg overflow-hidden 
-                          transform transition-transform hover:scale-105 snap-start cursor-pointer"
+                          transform transition-transform hover:scale-105 snap-start cursor-pointer group"
                 onClick={() =>
                   setSelectedArchievement({ id, title, resource, image, link })
                 }
               >
-                <div className="relative group">
+                <div className="relative">
                   <img
                     src={image}
                     alt={title}
@@ -59,11 +60,16 @@ const Achievement = () => {
                       alt={title}
                       className="w-full h-48 object-cover object-top rounded-md mb-3"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-                      <button className="bg-gray-900 rounded-lg p-2 px-4 w-auto shadow-lg text-sm font-semibold">
-                        View
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0 }}
+                      className="absolute h-16 bottom-0 left-0 w-full bg-black bg-opacity-40 flex items-center justify-end z-50 px-6"
+                    >
+                      <button className="bg-gray-900 text-white rounded-lg p-2 px-4 w-auto shadow-lg text-xs font-semibold">
+                        View More
                       </button>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
 
