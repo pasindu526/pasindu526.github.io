@@ -38,13 +38,7 @@ const Project = () => {
               <div className="flex-grow px-2 py-4">
                 <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
                 <div className="relative group">
-                  <p className="mb-4 text-gray-400">
-                    {/*line-clamp-2 group-hover:hidden*/}
-                    {project.description}
-                  </p>
-                  {/* <p className="hidden mb-4 text-gray-400 group-hover:block">
-                    {project.description}
-                  </p> */}
+                  <p className="mb-4 text-gray-400">{project.description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 py-4">
                   {project.techStack.map((tech, idx) => (
