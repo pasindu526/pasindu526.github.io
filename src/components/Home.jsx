@@ -25,15 +25,6 @@ const Home = () => {
     >
       <div className="max-w-7xl mt-28 md:mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-10 lg:gap-28 justify-between">
         <div className="md:w-1/2 md:space-y-6 px-6">
-          {/* <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.1 }}
-            className="md:text-2xl text-xl font-bold mb-2 sm:mb-0 text-blue-200"
-          >
-            Hello, I'm
-          </motion.h2> */}
-
           <motion.h1
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
