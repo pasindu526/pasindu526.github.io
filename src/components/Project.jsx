@@ -14,7 +14,7 @@ const Project = () => {
   return (
     <section
       id="project"
-      className="bg-gradient-to-r bg-gray-900 py-16 px-4 md:px-6 text-gray-300"
+      className="bg-gray-900 py-16 px-4 md:px-6 text-gray-300"
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
@@ -62,8 +62,8 @@ const Project = () => {
                   <div className="relative group">
                     <button
                       onClick={() => handleButtonClick(project.link)}
-                      className={`w-28 justify-center bg-blue-600 text-gray-200 px-4 py-2 rounded-md shadow-md hover:bg-blue-700 
-                      transition-colors ${
+                      className={`w-28 justify-center bg-blue-600 text-gray-200 px-4 py-2 rounded-md shadow-md hover:bg-blue-700 transform hover:scale-105
+                      transition-transform ${
                         !project.link ? 'cursor-not-allowed' : ''
                       }`}
                       disabled={!project.link}
@@ -92,7 +92,7 @@ const Project = () => {
                     <button
                       onClick={() => handleButtonClick(project.github)}
                       className={`w-24 flex gap-2 justify-center items-center bg-gray-800 text-gray-200 px-4 py-2 rounded-md 
-                      shadow-md hover:bg-gray-900 transition-colors ${
+                      shadow-md hover:bg-gray-900 transform hover:scale-105 transition-transform ${
                         !project.github ? 'cursor-not-allowed' : ''
                       }`}
                       disabled={!project.github}

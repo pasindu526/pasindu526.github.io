@@ -4,8 +4,12 @@ import { navLinksdata } from '../constants';
 import { Link } from 'react-scroll';
 import { LiaConnectdevelop } from 'react-icons/lia';
 
-const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
-  const [activeLink, setActiveLink] = useState('');
+const ResponsiveMenu = ({
+  showMenu,
+  setShowMenu,
+  activeLink,
+  setActiveLink,
+}) => {
   return (
     <div
       className={`${showMenu ? 'left-0' : '-left-[100%]'} fixed bottom-0 top-0 z-20 flex h-screen w-[75%] flex-col justify-between bg-gray-950 px-6 pb-6 pt-16 text-black md:hidden rounded-r-xl shadow-md transition-all`}
@@ -27,14 +31,16 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
                 key={id}
               >
                 <Link
-                  activeClass="text-white"
                   to={link}
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-50}
                   duration={100}
                   onSetActive={() => setActiveLink(link)}
                   onClick={() => setShowMenu(false)}
+                  className={
+                    activeLink === link ? 'text-white hover:text-white' : ''
+                  }
                 >
                   {title}
                 </Link>

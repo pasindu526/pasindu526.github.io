@@ -32,18 +32,7 @@ const ScrollToTopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          style={{
-            position: 'fixed',
-            backgroundColor: '#1C64F2', 
-            width: '40px', 
-            height: '40px', 
-            borderRadius: '50%', 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center',
-            bottom: '20px',
-            right: '20px',
-          }}
+          className="fixed bottom-5 right-5 z-50 p-4 bg-blue-600 rounded-full transition-transform transform hover:scale-110 focus:outline-none"
         >
           <FaArrowUp color="white" size={15} />
         </button>
