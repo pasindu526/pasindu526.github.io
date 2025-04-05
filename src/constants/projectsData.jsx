@@ -3,6 +3,7 @@ import P2 from '../assets/Projects/P2.png';
 import P3 from '../assets/Projects/P3.png';
 import P4 from '../assets/Projects/P4.png';
 import P5 from '../assets/Projects/P5.png';
+import P6 from '../assets/Projects/P6.png';
 
 export const projects = [
   {
@@ -49,5 +50,14 @@ export const projects = [
     link: 'https://www.figma.com/design/3vHldmCryOAPmwGaKog2ek/H2Open---Find-Cleam-Water-Near-You?node-id=385-772&t=cPkCeTgMsjSqArnb-1',
     github: '',
     image: P5,
+  },
+  {
+    title: 'ITC Institute - Frontend Dev',
+    description:
+      'A responsive and visually engaging website developed for ITC Institute, showcasing the institute’s courses, services, and information.',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    link: 'https://itcinstitute.netlify.app/',
+    github: 'https://github.com/pasindu526/itc_institute.git',
+    image: P6,
   },
 ];
