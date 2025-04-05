@@ -9,7 +9,13 @@
 }
 
 html{
-    scroll-behavior: smooth;
+  color-scheme: only light;
+  filter: none !important;
+  scroll-behavior: smooth;
+}
+
+span {
+  will-change: width, opacity;
 }
 
 .spinner-border {

@@ -4,9 +4,9 @@ import { Link } from 'react-scroll';
 
 const About = () => {
   return (
-    <div id="about" className="py-20 bg-gray-900 z-50 text-gray-300">
+    <div id="about" className="py-16 bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-11 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-10 text-center">
           About Me
         </h2>
         <div className="flex flex-col md:flex-row gap-10">
@@ -47,7 +47,7 @@ const About = () => {
                 </li>
               </ul>
               <Link to="contact" offset={-70} duration={200}>
-                <button className="px-3 py-2 mt-8 rounded-md bg-blue-600 hover:bg-blue-700 text-xs text-white font-semibold">
+                <button className="px-3 py-2 mt-8 rounded-md bg-blue-600 hover:bg-blue-700 transition-transform transform hover:scale-105 text-xs text-white font-semibold">
                   Contact Me
                 </button>
               </Link>
@@ -88,25 +88,25 @@ const About = () => {
                 My Interests
               </h1>
               <div className="flex flex-wrap gap-4 mb-5 text-xs">
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Front-End Development
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Fullstack Development
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Wordpress
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Graphic Design
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   UI/UX Design
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Web Design
                 </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full">
+                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
                   Quality Assurance (Automation/Manual)
                 </p>
               </div>

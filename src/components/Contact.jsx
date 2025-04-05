@@ -1,5 +1,13 @@
 import React, { useState, useRef } from 'react';
-import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaUserFriends,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -66,7 +74,9 @@ const Contact = () => {
                 Have questions or want to contact me? Let's connect..! You can
                 reach me via email, phone, social media, or contact forum.
               </p>
-              <h3 className="text-2xl font-semibold">Email</h3>
+              <h3 className="flex flex-row items-center text-2xl font-semibold">
+                <FaEnvelope className="w-5 h-5 mr-2" /> Email
+              </h3>
               <p className="text-gray-600 mt-2">
                 <a
                   href="mailto:pasindumadusanka526@gmail.com"
@@ -77,52 +87,57 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold">Phone</h3>
+              <h3 className="flex flex-row items-center text-2xl font-semibold">
+                <FaPhone className="w-4 h-4 mr-2" /> Phone
+              </h3>
               <p className="text-gray-600 mt-2 flex flex-col max-w-32">
                 <a
                   href="tel:+94763126721"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline transition-transform transform hover:scale-105"
                 >
                   +94 76 312 6721
                 </a>
                 <a
                   href="tel:+94713508217"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline transition-transform transform hover:scale-105"
                 >
                   +94 71 350 8217
                 </a>
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold">Follow Me</h3>
+              <h3 className="flex flex-row items-center text-2xl font-semibold">
+                <FaUserFriends className="w-5 h-5 mr-2" />
+                Follow Me
+              </h3>
               <div className="flex gap-3 text-2xl transition-all mt-5 text-blue-400">
                 <a
                   href="https://www.facebook.com/profile.php?id=100011722833344"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook className="hover:text-blue-300" />
+                  <FaFacebook className="hover:text-blue-300 transition-transform transform hover:scale-110" />
                 </a>
                 <a
                   href="https://wa.me/+94754369691"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaWhatsapp className="hover:text-green-400" />
+                  <FaWhatsapp className="hover:text-green-400 transition-transform transform hover:scale-110" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/pasindu-bandara-ab6925254"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="hover:text-blue-300" />
+                  <FaLinkedin className="hover:text-blue-300 transition-transform transform hover:scale-110" />
                 </a>
                 <a
                   href="https://github.com/pasindu526"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="hover:" />
+                  <FaGithub className="hover:text-gray-400 transition-transform transform hover:scale-110" />
                 </a>
               </div>
             </div>

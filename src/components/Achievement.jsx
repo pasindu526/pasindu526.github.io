@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { archievements } from '../constants/archivementsData';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Achievement = () => {
   const [selectedArchievement, setSelectedArchievement] = useState(null);
-  const scrollContainerRef = React.useRef(null);
+  const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
     scrollContainerRef.current.scrollBy({
-      left: -300, // Adjust scrolling distance
+      left: -300,
       behavior: 'smooth',
     });
   };
 
   const scrollRight = () => {
     scrollContainerRef.current.scrollBy({
-      left: 300, // Adjust scrolling distance
+      left: 300,
       behavior: 'smooth',
     });
   };
@@ -52,9 +52,9 @@ const Achievement = () => {
                   <img
                     src={image}
                     alt={title}
-                    className="w-full h-48 object-cover object-top rounded-md mb-3 group-hover:hidden"
+                    className="hidden sm:block w-full h-48 object-cover object-top rounded-md mb-3 group-hover:hidden"
                   />
-                  <div className="hidden group-hover:block">
+                  <div className="sm:hidden group-hover:block">
                     <img
                       src={image}
                       alt={title}
@@ -64,10 +64,10 @@ const Achievement = () => {
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0 }}
-                      className="absolute h-16 bottom-0 left-0 w-full bg-black bg-opacity-40 flex items-center justify-end z-50 px-6"
+                      className="absolute h-16 bottom-0 left-0 w-full bg-black bg-opacity-50 flex items-center justify-end z-50 px-6"
                     >
                       <button className="bg-gray-900 text-white rounded-lg p-2 px-4 w-auto shadow-lg text-xs font-semibold">
-                        View More
+                        See More
                       </button>
                     </motion.div>
                   </div>
@@ -86,7 +86,7 @@ const Achievement = () => {
             onClick={scrollLeft}
             className="absolute -left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-90 text-white 
                       rounded-full p-4 hover:bg-gray-600 hover:bg-opacity-90 hover:border-2 hover:border-gray-300 z-10 shadow-lg 
-                      flex items-center justify-center"
+                      flex items-center justify-center focus:outline-none"
           >
             <FaArrowLeft className="text-lg" />
           </button>
@@ -94,7 +94,7 @@ const Achievement = () => {
             onClick={scrollRight}
             className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-90 text-white 
                       rounded-full p-4 hover:bg-gray-600 hover:bg-opacity-90 hover:border-2 hover:border-gray-300 z-10 shadow-lg 
-                      flex items-center justify-center"
+                      flex items-center justify-center focus:outline-none"
           >
             <FaArrowRight className="text-lg" />
           </button>

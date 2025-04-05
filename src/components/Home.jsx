@@ -20,8 +20,8 @@ const Home = () => {
 
   return (
     <section
-      id="home"
-      className="min-h-screen bg-gray-950 text-white flex flex-col justify-center items-center relative z-10"
+      id="/"
+      className="home min-h-screen bg-gray-950 text-white flex flex-col justify-center items-center relative z-10"
     >
       <div className="max-w-7xl mt-28 md:mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-10 lg:gap-28 justify-between">
         <div className="md:w-1/2 md:space-y-6 px-6">
@@ -67,17 +67,18 @@ const Home = () => {
             create beautiful and user-friendly web applications.
           </motion.p>
 
-          <motion.a
+          <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.4, delay: 0.5 }}
-            href="/Pasindu Bandara.pdf"
-            // download="Pasindu Bandara.pdf"
-            target="_blank"
-            className="px-4 py-3 w-36 flex items-center gap-2 bg-blue-600 rounded-md text-sm font-semibold text-white hover:bg-blue-700 "
           >
-            <Download className="w-4 h-4" /> Download CV
-          </motion.a>
+            <button
+              onClick={() => window.open('/Pasindu Bandara.pdf', '_blank')}
+              className="px-4 py-3 w-36 flex items-center gap-2 bg-blue-600 rounded-md text-sm font-semibold text-white hover:bg-blue-700 transition-transform transform hover:scale-105"
+            >
+              <Download className="w-4 h-4" /> Download CV
+            </button>
+          </motion.div>
 
           <div className="flex gap-3 text-2xl transition-all mt-6 md:mt-0">
             <a
@@ -85,28 +86,28 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="hover:text-blue-500" />
+              <FaFacebook className="hover:text-blue-500 transition-transform transform hover:scale-110" />
             </a>
             <a
               href="https://wa.me/+94754369691"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaWhatsapp className="hover:text-green-400" />
+              <FaWhatsapp className="hover:text-green-400 transition-transform transform hover:scale-110" />
             </a>
             <a
               href="https://www.linkedin.com/in/pasindu-bandara-ab6925254"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="hover:text-blue-500" />
+              <FaLinkedin className="hover:text-blue-500 transition-transform transform hover:scale-110" />
             </a>
             <a
               href="https://github.com/pasindu526"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="hover:text-gray-400" />
+              <FaGithub className="hover:text-gray-400 transition-transform transform hover:scale-110" />
             </a>
           </div>
         </div>
