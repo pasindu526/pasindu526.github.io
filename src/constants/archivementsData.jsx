@@ -7,6 +7,8 @@ import A6 from '../assets/Archievements/A6.png';
 import A7 from '../assets/Archievements/A7.png';
 import A8 from '../assets/Archievements/A8.png';
 import A9 from '../assets/Archievements/A9.png';
+import A10 from '../assets/Archievements/A10.png';
+import A11 from '../assets/Archievements/A11.png';
 
 export const archievements = [
   {
@@ -46,6 +48,20 @@ export const archievements = [
     resource: 'Great Learning',
     image: A5,
     link: 'https://www.mygreatlearning.com/certificate/AAIYOVUH',
+  },
+  {
+    id: 11,
+    title: 'Codeless Test Automation with Selenium IDE',
+    resource: 'Test Automation University',
+    image: A11,
+    link: 'https://testautomationu.applitools.com/certificate/?id=0863b36a',
+  },
+  {
+    id: 10,
+    title: 'API Test Automation with Postman',
+    resource: 'Test Automation University',
+    image: A10,
+    link: 'https://testautomationu.applitools.com/certificate/?id=307033c5',
   },
   {
     id: 4,
