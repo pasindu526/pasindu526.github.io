@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gray-950 mb-7 z-50 w-full fixed items-center will-change-transform">
-      <div className="flex items-center justify-between mx-auto py-6 px-6 md:px-8 border-b border-gray-600">
+      <div className="flex items-center justify-between mx-auto py-6 px-6 md:px-8 lg:px-14 border-b border-gray-600">
         {/* Logo Section */}
         <div>
           <a href="/">
