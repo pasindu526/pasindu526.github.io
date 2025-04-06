@@ -9,6 +9,9 @@ import A8 from '../assets/Archievements/A8.png';
 import A9 from '../assets/Archievements/A9.png';
 import A10 from '../assets/Archievements/A10.png';
 import A11 from '../assets/Archievements/A11.png';
+import A12 from '../assets/Archievements/A12.png';
+import A13 from '../assets/Archievements/A13.png';
+import A14 from '../assets/Archievements/A14.png';
 
 export const archievements = [
   {
@@ -62,6 +65,27 @@ export const archievements = [
     resource: 'Test Automation University',
     image: A10,
     link: 'https://testautomationu.applitools.com/certificate/?id=307033c5',
+  },
+  {
+    id: 14,
+    title: 'Introduction to SQL',
+    resource: 'Sololearn',
+    image: A14,
+    link: 'https://www.sololearn.com/certificates/CC-DZFUT5KK',
+  },
+  {
+    id: 13,
+    title: 'Introduction to Java',
+    resource: 'Sololearn',
+    image: A13,
+    link: 'https://www.sololearn.com/certificates/CC-QJT307IG',
+  },
+  {
+    id: 12,
+    title: 'Introduction to Python',
+    resource: 'Sololearn',
+    image: A12,
+    link: 'https://www.sololearn.com/certificates/CC-ZC9UNEAX',
   },
   {
     id: 4,
