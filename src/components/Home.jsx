@@ -24,7 +24,7 @@ const Home = () => {
       className="home min-h-screen bg-gray-950 text-white flex flex-col justify-center items-center relative z-10"
     >
       <div className="max-w-7xl mt-28 md:mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-10 lg:gap-28 justify-between">
-        <div className="md:w-1/2 md:space-y-6 px-6">
+        <div className="md:w-1/2 md:space-y-7 px-6">
           <motion.h1
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
