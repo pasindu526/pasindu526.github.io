@@ -4,20 +4,19 @@ const education = [
     degree: 'Bachelor of Software Engineering (BSE hons)',
     institution: 'The Open University of Sri Lanka',
     year: '2022 - 2026',
-    // description:
-    //   'Graduated with a strong foundation in critical thinking and problem-solving.',
+    description: 'Undergraduate', //'with a strong foundation in critical thinking and problem-solving.',
     icon: '🎓',
   },
   {
     degree: 'Secondary Education ',
     institution: 'Poramadulla Central College',
     year: '2012 - 2021',
-    // description:
-    //   'Lorem ipsum dolor sit amet consectetur adipisicing elit Vel molestiae.',
+    description:
+      'GCE Ordinary Level: 3A, 6B\nGCE Advanced Level: 1C, 2S\n(Combined Mathematics-S, Physics-S, ICT-C)',
     icon: '📚',
   },
   {
-    degree: 'Secondary Education ',
+    degree: 'Primary Education ',
     institution: 'Model School Rikillagaskada',
     year: '2007 - 2012',
     // description:
@@ -29,7 +28,7 @@ const education = [
 const experience = [
   {
     role: 'Management Assistant (MA)',
-    company: 'Genesis College International',
+    company: 'Genesis College International Kandy',
     year: '2023 - 2024',
     // description:
     //   'Founded a digital marketing and web development agency, delivering tailored solutions.',
@@ -73,7 +72,12 @@ const Education = () => {
                   </h4>
                   <p className="text-gray-400">{edu.institution}</p>
                   <p className="text-gray-400 text-sm italic">{edu.year}</p>
-                  {/* <p className="text-gray-400 mt-2">{edu.description}</p> */}
+                  <p
+                    style={{ whiteSpace: 'pre-line' }}
+                    className="text-gray-400 mt-2"
+                  >
+                    {edu.description}
+                  </p>
                 </div>
               </div>
             ))}
