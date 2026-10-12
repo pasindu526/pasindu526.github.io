@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
-import { FaChevronRight, FaUserCircle } from 'react-icons/fa';
 import { navLinksdata } from '../constants';
 import { Link } from 'react-scroll';
 import { LiaConnectdevelop } from 'react-icons/lia';
+
+import PropTypes from 'prop-types';
+
+// Define prop types for the ResponsiveMenu component
+ResponsiveMenu.propTypes = {
+  showMenu: PropTypes.bool.isRequired,
+  setShowMenu: PropTypes.func.isRequired,
+  activeLink: PropTypes.string.isRequired,
+  setActiveLink: PropTypes.func.isRequired,
+};
 
 const ResponsiveMenu = ({
   showMenu,
