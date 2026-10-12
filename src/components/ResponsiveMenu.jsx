@@ -1,16 +1,7 @@
+/* eslint-disable react/prop-types */
 import { navLinksdata } from '../constants';
 import { Link } from 'react-scroll';
 import { LiaConnectdevelop } from 'react-icons/lia';
-
-import PropTypes from 'prop-types';
-
-// Define prop types for the ResponsiveMenu component
-ResponsiveMenu.propTypes = {
-  showMenu: PropTypes.bool.isRequired,
-  setShowMenu: PropTypes.func.isRequired,
-  activeLink: PropTypes.string.isRequired,
-  setActiveLink: PropTypes.func.isRequired,
-};
 
 const ResponsiveMenu = ({
   showMenu,
