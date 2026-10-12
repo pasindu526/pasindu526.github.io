@@ -1,4 +1,3 @@
-import React from 'react';
 import { Download } from 'lucide-react';
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Profile from '../assets/Me.png';
@@ -32,7 +31,7 @@ const Home = () => {
             className="md:text-6xl text-4xl font-bold mb-4"
           >
             <span className="flex flex-col  text-xl font-bold mb-2 text-gray-300 ">
-              Hello, I'm
+              Hello, I&apos;m
             </span>
             Pasindu Bandara
           </motion.h1>
@@ -43,7 +42,7 @@ const Home = () => {
             transition={{ duration: 1.2, delay: 0.4 }}
             className="md:text-2xl text-xl font-bold text-white mb-4"
           >
-            I'm a <span className="text-blue-400">{text}</span>
+            I&apos;m a <span className="text-blue-400">{text}</span>
             <Cursor />
           </motion.h2>
 

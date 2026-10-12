@@ -1,4 +1,3 @@
-import React from 'react';
 import AboutImg from '../assets/about.jpg';
 import { Link } from 'react-scroll';
 
@@ -57,7 +56,8 @@ const About = () => {
           {/* Right/paragraph section */}
           <div className="p-5 md:p-6 lg:p-8 md:w-2/3 bg-gray-950 rounded-md shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] md:text-justify">
             <h1 className="font-bold text-2xl mb-6">
-              Hi, I'm <span className="text-blue-400">Pasindu Bandara,</span>
+              Hi, I&apos;m{' '}
+              <span className="text-blue-400">Pasindu Bandara,</span>
             </h1>
             <p className="text-base leading-7 mb-6">
               A Software Engineering undergraduate at{' '}
@@ -70,16 +70,16 @@ const About = () => {
               responsive digital experiences.
             </p>
             <p className="text-base leading-7 mb-6">
-              I'm continuously improving my skills in HTML, CSS, JavaScript, and
-              MySQL, while exploring frameworks like React and Tailwind CSS.
-              Additionally, I have experience with WordPress, Git, and Adobe
-              Photoshop, allowing me to work across different aspects of web
-              development. As I expand my expertise, I'm also diving into
-              Software Quality Assurance through online courses to enhance my
-              testing and quality management skills.
+              I&apos;m continuously improving my skills in HTML, CSS,
+              JavaScript, and MySQL, while exploring frameworks like React and
+              Tailwind CSS. Additionally, I have experience with WordPress, Git,
+              and Adobe Photoshop, allowing me to work across different aspects
+              of web development. As I expand my expertise, I&apos;m also diving
+              into Software Quality Assurance through online courses to enhance
+              my testing and quality management skills.
             </p>
             <p className="text-base leading-7 ">
-              I’m always eager to learn, take on challenges, and grow as a
+              I&apos;m always eager to learn, take on challenges, and grow as a
               developer and QA enthusiast. My goal is to create high-quality,
               functional, and impactful digital solutions.
             </p>
