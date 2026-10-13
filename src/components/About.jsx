@@ -9,8 +9,10 @@ const About = () => {
 
     let age = today.getFullYear() - birthDate.getFullYear();
 
+    // Check if the birthday has occurred this year
     const monthDifference = today.getMonth() - birthDate.getMonth();
 
+    // If the birthday hasn't occurred yet this year, subtract 1 from the age
     if (
       monthDifference < 0 ||
       (monthDifference === 0 && today.getDate() < birthDate.getDate())
@@ -76,61 +78,69 @@ const About = () => {
           </div>
 
           {/* Right/paragraph section */}
+
           <div className="p-5 md:p-6 lg:p-8 md:w-2/3 bg-gray-950 rounded-md shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] md:text-justify">
             <h1 className="font-bold text-2xl mb-6">
               Hi, I&apos;m{' '}
-              <span className="text-blue-400">Pasindu Bandara,</span>
+              <span className="text-blue-400">Pasindu Bandara.</span>
             </h1>
+
             <p className="text-base leading-7 mb-6">
               A Software Engineering undergraduate at{' '}
               <span className="font-semibold">
                 The Open University of Sri Lanka (OUSL)
               </span>{' '}
-              with a strong interest in web development, UI/UX design, and
-              Software Quality Assurance. I enjoy learning and experimenting
-              with modern technologies to create clean, user-friendly, and
-              responsive digital experiences.
+              with six months of industry internship experience in web
+              development, UI/UX design, and software quality assurance. I enjoy
+              building clean, user-friendly, and responsive digital experiences
+              that solve real-world problems.
             </p>
+
             <p className="text-base leading-7 mb-6">
-              I&apos;m continuously improving my skills in HTML, CSS,
-              JavaScript, and MySQL, while exploring frameworks like React and
-              Tailwind CSS. Additionally, I have experience with WordPress, Git,
-              and Adobe Photoshop, allowing me to work across different aspects
-              of web development. As I expand my expertise, I&apos;m also diving
-              into Software Quality Assurance through online courses to enhance
-              my testing and quality management skills.
+              I have hands-on experience with{' '}
+              <span className="font-semibold">
+                React, JavaScript, TypeScript, and Tailwind CSS
+              </span>
+              , contributing to client projects, website revamps, and responsive
+              user interfaces during my internship. I&apos;m also developing my
+              backend skills with Node.js, Express.js, and MongoDB through
+              full-stack project development. I use tools such as Git, GitHub,
+              and Postman in my development workflow.
             </p>
-            <p className="text-base leading-7 ">
-              I&apos;m always eager to learn, take on challenges, and grow as a
-              developer and QA enthusiast. My goal is to create high-quality,
-              functional, and impactful digital solutions.
+
+            <p className="text-base leading-7">
+              Beyond web development, I&apos;m interested in UI/UX design and
+              Software Quality Assurance, including manual and automated
+              testing. I enjoy learning new technologies, collaborating with
+              others, and improving my problem-solving skills. My goal is to
+              grow as a software engineer and contribute to building reliable,
+              high-quality digital solutions.
             </p>
+
             <div className="mt-6">
-              <h1 className="font-bold text-xl mb-5 text-blue-400">
+              <h2 className="font-bold text-xl mb-5 text-blue-400">
                 My Interests
-              </h1>
+              </h2>
+
               <div className="flex flex-wrap gap-4 mb-5 text-xs">
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Front-End Development
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Fullstack Development
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Wordpress
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Graphic Design
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  UI/UX Design
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Web Design
-                </p>
-                <p className="bg-gray-900 cursor-pointer text-gray-300 px-2 py-1 rounded-full transition-transform transform hover:scale-105">
-                  Quality Assurance (Automation/Manual)
-                </p>
+                {[
+                  'Front-End Development',
+                  'Full-Stack Development',
+                  'UI/UX Design',
+                  'Software Quality Assurance',
+                  'Manual Testing',
+                  'Test Automation',
+                  'WordPress Development',
+                  'Web Design',
+                  'Graphic Design',
+                ].map((interest) => (
+                  <span
+                    key={interest}
+                    className="bg-gray-900 text-gray-300 px-3 py-2 rounded-full transition-transform duration-200 hover:scale-105"
+                  >
+                    {interest}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

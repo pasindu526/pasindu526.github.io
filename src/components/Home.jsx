@@ -8,8 +8,10 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 const Home = () => {
   const [text] = useTypewriter({
     words: [
+      'Junior Software Engineer',
       'Front-End Developer',
       'UI/UX Designer',
+      'Full Stack Developer',
       'Web Developer',
       'Wordpress Developer',
     ],
@@ -52,9 +54,9 @@ const Home = () => {
             transition={{ duration: 1.4, delay: 0.5 }}
             className="lg:w-[600px] mb-4 md:mb-0 text-sm text-gray-300 text-justify"
           >
-            A Software Engineering undergraduate with a passion for front-end
-            development, UI design, and modern web technologies. I love to
-            create beautiful and user-friendly web applications.
+            A Software Engineering undergraduate with a passion for front-end/
+            full-stack development, UI design, and modern web technologies. I
+            love to create beautiful and user-friendly web applications.
           </motion.p>
 
           <motion.div
