@@ -12,8 +12,16 @@ import A11 from '../assets/Archievements/A11.png';
 import A12 from '../assets/Archievements/A12.png';
 import A13 from '../assets/Archievements/A13.png';
 import A14 from '../assets/Archievements/A14.png';
+import A15 from '../assets/Archievements/A15.png';
 
 export const archievements = [
+  {
+    id: 15,
+    title: 'MERN Stack Front to Back: Full stack React, Redux & Node.js',
+    resource: 'Packt-Coursera',
+    image: A15,
+    link: 'https://coursera.org/verify/specialization/COH3MHABYTFK',
+  },
   {
     id: 9,
     title: 'Network Technician Career Path',

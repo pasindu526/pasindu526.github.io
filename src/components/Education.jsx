@@ -1,10 +1,10 @@
 const experience = [
   {
-    role: 'Software Engineering (Intern)',
+    role: 'Software Engineering Intern (6 months)',
     company: 'All In One Holdings (Pvt) Ltd - kandy',
     year: 'May 2025 - November 2025',
     description:
-      'Developed and optimized MERN stack applications, enhancing user experience.',
+      'Contributed to frontend development, UI/UX design, QA activities, and website revamps using React, TypeScript, and Tailwind CSS. Participated in project planning, resolving UI issues, and technical documentation.',
     icon: '💻',
   },
   {
@@ -62,16 +62,22 @@ const Education = () => {
             {experience.map((exp, index) => (
               <div
                 key={index}
-                className="flex items-start bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-6"
+                className="flex items-start bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-6 cursor-default"
               >
-                <div className="text-4xl mr-6 text-blue-500">{exp.icon}</div>
+                <div className="hidden md:block text-4xl mr-6 text-blue-500">
+                  {exp.icon}
+                </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-100">
                     {exp.role}
                   </h4>
                   <p className="text-gray-300 font-medium">{exp.company}</p>
                   <p className="text-gray-400 text-sm italic">{exp.year}</p>
-                  {/* <p className="text-gray-400 mt-2">{exp.description}</p> */}
+                  {exp.description && (
+                    <p className="text-gray-400 mt-2 md:text-justify border-t border-gray-500 pt-2">
+                      {exp.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -85,21 +91,25 @@ const Education = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="flex items-start bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-6"
+                className="flex items-start bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 mb-6 cursor-default"
               >
-                <div className="text-4xl mr-6 text-blue-500">{edu.icon}</div>
+                <div className="hidden md:block text-4xl mr-6 text-blue-500">
+                  {edu.icon}
+                </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-100">
                     {edu.degree}
                   </h4>
                   <p className="text-gray-300 font-medium">{edu.institution}</p>
                   <p className="text-gray-400 text-sm italic">{edu.year}</p>
-                  <p
-                    style={{ whiteSpace: 'pre-line' }}
-                    className="text-gray-400 mt-2"
-                  >
-                    {edu.description}
-                  </p>
+                  {edu.description && (
+                    <p
+                      style={{ whiteSpace: 'pre-line' }}
+                      className="text-gray-400 mt-2 border-t border-gray-500 pt-2"
+                    >
+                      {edu.description}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
