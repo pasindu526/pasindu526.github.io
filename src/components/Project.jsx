@@ -43,7 +43,7 @@ const Project = () => {
                   {project.techStack.map((tech, idx) => (
                     <div
                       key={idx}
-                      className="bg-gray-900 text-xs font-medium px-4 py-1 rounded-full"
+                      className="bg-gray-900 text-xs font-medium px-4 py-2 rounded-full"
                     >
                       {tech}
                     </div>
