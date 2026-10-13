@@ -1,7 +1,28 @@
-import AboutImg from '../assets/about.jpg';
+import AboutImg from '../assets/about.png';
 import { Link } from 'react-scroll';
 
 const About = () => {
+  // Function to calculate age based on date of birth
+  const calculateAge = (dob) => {
+    const birthDate = new Date(dob);
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+    return age;
+  };
+
+  // Calculate age using the date of birth
+  const age = calculateAge('2001-06-02');
+
   return (
     <div id="about" className="py-16 bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10">
@@ -34,7 +55,8 @@ const About = () => {
                   Rikillagaskada, Sri Lanka
                 </li>
                 <li>
-                  <strong className="mr-2 text-blue-300">Age:</strong>23
+                  <strong className="mr-2 text-blue-300">Age:</strong>
+                  {age} years
                 </li>
                 <li>
                   <strong className="mr-2 text-blue-300">Degree:</strong>
