@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import { useState, useRef } from 'react';
 import {
   FaEnvelope,
   FaFacebook,

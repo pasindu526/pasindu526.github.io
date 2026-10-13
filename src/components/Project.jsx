@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { projects } from '../constants/projectsData';
 
@@ -18,7 +17,7 @@ const Project = () => {
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-          My Projects
+          Personal & Academic Projects
           <p className="text-center text-blue-200 text-opacity-80 text-base font-semibold mt-5">
             Total Projects: {totalProjects}
           </p>

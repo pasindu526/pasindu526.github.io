@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HiMenuAlt3, HiMenuAlt1 } from 'react-icons/hi';
 import { LiaConnectdevelop } from 'react-icons/lia';
 import ResponsiveMenu from './ResponsiveMenu';

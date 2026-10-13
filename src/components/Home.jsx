@@ -1,4 +1,3 @@
-import React from 'react';
 import { Download } from 'lucide-react';
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Profile from '../assets/Me.png';
@@ -9,8 +8,10 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 const Home = () => {
   const [text] = useTypewriter({
     words: [
+      'Junior Software Engineer',
       'Front-End Developer',
       'UI/UX Designer',
+      'Full Stack Developer',
       'Web Developer',
       'Wordpress Developer',
     ],
@@ -32,7 +33,7 @@ const Home = () => {
             className="md:text-6xl text-4xl font-bold mb-4"
           >
             <span className="flex flex-col  text-xl font-bold mb-2 text-gray-300 ">
-              Hello, I'm
+              Hello, I&apos;m
             </span>
             Pasindu Bandara
           </motion.h1>
@@ -43,7 +44,7 @@ const Home = () => {
             transition={{ duration: 1.2, delay: 0.4 }}
             className="md:text-2xl text-xl font-bold text-white mb-4"
           >
-            I'm a <span className="text-blue-400">{text}</span>
+            I&apos;m a <span className="text-blue-400">{text}</span>
             <Cursor />
           </motion.h2>
 
@@ -53,9 +54,9 @@ const Home = () => {
             transition={{ duration: 1.4, delay: 0.5 }}
             className="lg:w-[600px] mb-4 md:mb-0 text-sm text-gray-300 text-justify"
           >
-            A Software Engineering undergraduate with a passion for front-end
-            development, UI design, and modern web technologies. I love to
-            create beautiful and user-friendly web applications.
+            A Software Engineering undergraduate with a passion for front-end/
+            full-stack development, UI design, and modern web technologies. I
+            love to create beautiful and user-friendly web applications.
           </motion.p>
 
           <motion.div

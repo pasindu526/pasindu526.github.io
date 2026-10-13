@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { FaChevronRight, FaUserCircle } from 'react-icons/fa';
+/* eslint-disable react/prop-types */
 import { navLinksdata } from '../constants';
 import { Link } from 'react-scroll';
 import { LiaConnectdevelop } from 'react-icons/lia';
