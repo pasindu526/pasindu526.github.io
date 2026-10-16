@@ -74,11 +74,12 @@ export const projects = [
       'Researched design requirements and created UI layouts for the Marketing, Technology, and Design pages as part of the company website revamp.',
     techStack: [
       'UI/UX Design',
+      'Responsive Design',
+      'Figma',
       'Website Design',
       'User Research',
-      'Responsive Design',
     ],
-    link: '',
+    link: 'https://www.figma.com/proto/Ncj07PkKX47dT7M5zR58iY/AIOH---Service-Pages?t=1sozP52LXiwrX2WD-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-3673',
     image: P5,
   },
   {
@@ -87,8 +88,15 @@ export const projects = [
     category: 'Internship Work',
     description:
       'Researched design requirements and designed website page layouts, interactive prototypes, and an admin panel wireframe based on project requirements and client feedback.',
-    techStack: ['UI/UX Design', 'Wireframing', 'Prototyping', 'User Personas'],
-    link: '',
+    techStack: [
+      'UI/UX Design',
+      'Responsive Design',
+      'Figma',
+      'Wireframing',
+      'Prototyping',
+      'User Personas',
+    ],
+    link: 'https://www.figma.com/proto/VhxiziOLfv61jA97tmL3f7/MP---Mahinda-Panagoda?node-id=1260-1485&t=YC9EB6CHoD8XLYqb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1260%3A6456',
     image: P6,
   },
 ];
